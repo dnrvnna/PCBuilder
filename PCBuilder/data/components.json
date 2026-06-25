@@ -1,0 +1,225 @@
+{
+  "components": [
+    {
+      "id": "cpu-001",
+      "name": "Intel Core i9-13900K",
+      "category": "Процессор",
+      "price": 55000,
+      "description": "24 ядра, 5.8 ГГц, LGA1700",
+      "socket": "LGA1700",
+      "memoryType": null,
+      "powerConsumption": 253,
+      "recommendedPSU": null,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "cores": "24",
+        "threads": "32",
+        "baseClock": "3.0 ГГц",
+        "boostClock": "5.8 ГГц"
+      }
+    },
+    {
+      "id": "cpu-002",
+      "name": "Intel Core i7-13700K",
+      "category": "Процессор",
+      "price": 38000,
+      "description": "16 ядер, 5.4 ГГц, LGA1700",
+      "socket": "LGA1700",
+      "memoryType": null,
+      "powerConsumption": 253,
+      "recommendedPSU": null,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "cores": "16",
+        "threads": "24",
+        "baseClock": "3.4 ГГц",
+        "boostClock": "5.4 ГГц"
+      }
+    },
+    {
+      "id": "cpu-003",
+      "name": "AMD Ryzen 9 7950X",
+      "category": "Процессор",
+      "price": 52000,
+      "description": "16 ядер, 5.7 ГГц, AM5",
+      "socket": "AM5",
+      "memoryType": null,
+      "powerConsumption": 170,
+      "recommendedPSU": null,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "cores": "16",
+        "threads": "32",
+        "baseClock": "4.5 ГГц",
+        "boostClock": "5.7 ГГц"
+      }
+    },
+    {
+      "id": "cpu-004",
+      "name": "AMD Ryzen 7 7800X3D",
+      "category": "Процессор",
+      "price": 40000,
+      "description": "8 ядер, 5.0 ГГц, AM5",
+      "socket": "AM5",
+      "memoryType": null,
+      "powerConsumption": 120,
+      "recommendedPSU": null,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "cores": "8",
+        "threads": "16",
+        "baseClock": "4.2 ГГц",
+        "boostClock": "5.0 ГГц"
+      }
+    },
+    {
+      "id": "mb-001",
+      "name": "ASUS ROG Maximus Z790 Hero",
+      "category": "Материнская плата",
+      "price": 45000,
+      "description": "LGA1700, DDR5, ATX",
+      "socket": "LGA1700",
+      "memoryType": "DDR5",
+      "powerConsumption": null,
+      "recommendedPSU": null,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "formFactor": "ATX",
+        "ramSlots": "4",
+        "maxRam": "128GB"
+      }
+    },
+    {
+      "id": "mb-002",
+      "name": "MSI MPG Z790 Carbon WiFi",
+      "category": "Материнская плата",
+      "price": 32000,
+      "description": "LGA1700, DDR5, ATX",
+      "socket": "LGA1700",
+      "memoryType": "DDR5",
+      "powerConsumption": null,
+      "recommendedPSU": null,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "formFactor": "ATX",
+        "ramSlots": "4",
+        "maxRam": "128GB"
+      }
+    },
+    {
+      "id": "gpu-001",
+      "name": "NVIDIA RTX 4090",
+      "category": "Видеокарта",
+      "price": 160000,
+      "description": "24GB GDDR6X, 450W",
+      "socket": null,
+      "memoryType": null,
+      "powerConsumption": 450,
+      "recommendedPSU": null,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "vram": "24GB GDDR6X",
+        "cudaCores": "16384",
+        "bus": "PCIe 4.0"
+      }
+    },
+    {
+      "id": "gpu-002",
+      "name": "NVIDIA RTX 4080 Super",
+      "category": "Видеокарта",
+      "price": 100000,
+      "description": "16GB GDDR6X, 320W",
+      "socket": null,
+      "memoryType": null,
+      "powerConsumption": 320,
+      "recommendedPSU": null,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "vram": "16GB GDDR6X",
+        "cudaCores": "10240",
+        "bus": "PCIe 4.0"
+      }
+    },
+    {
+      "id": "ram-001",
+      "name": "32GB DDR5 6000MHz",
+      "category": "Оперативная память",
+      "price": 15000,
+      "description": "2x16GB, CL30",
+      "socket": null,
+      "memoryType": "DDR5",
+      "powerConsumption": null,
+      "recommendedPSU": null,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "capacity": "32GB",
+        "speed": "6000MHz",
+        "timings": "CL30"
+      }
+    },
+    {
+      "id": "ram-002",
+      "name": "16GB DDR4 3600MHz",
+      "category": "Оперативная память",
+      "price": 6000,
+      "description": "2x8GB, CL18",
+      "socket": null,
+      "memoryType": "DDR4",
+      "powerConsumption": null,
+      "recommendedPSU": null,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "capacity": "16GB",
+        "speed": "3600MHz",
+        "timings": "CL18"
+      }
+    },
+    {
+      "id": "ssd-001",
+      "name": "SSD 2TB NVMe Gen4",
+      "category": "SSD",
+      "price": 14000,
+      "description": "Чтение 7000MB/s, M.2",
+      "socket": null,
+      "memoryType": null,
+      "powerConsumption": null,
+      "recommendedPSU": null,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "capacity": "2TB",
+        "readSpeed": "7000MB/s",
+        "writeSpeed": "5000MB/s",
+        "interface": "M.2 NVMe"
+      }
+    },
+    {
+      "id": "psu-001",
+      "name": "Блок питания 1000W",
+      "category": "Блок питания",
+      "price": 12000,
+      "description": "80+ Platinum, ATX 3.0",
+      "socket": null,
+      "memoryType": null,
+      "powerConsumption": null,
+      "recommendedPSU": 1000,
+      "inStock": true,
+      "imageUrl": null,
+      "specs": {
+        "power": "1000W",
+        "efficiency": "80+ Platinum",
+        "modular": "Полностью модульный"
+      }
+    }
+  ]
+}
