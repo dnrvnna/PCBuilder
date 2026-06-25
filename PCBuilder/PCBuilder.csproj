@@ -95,6 +95,9 @@
     <Compile Include="..\..\..\..\..\source\repos\PCbuilder1\PCbuilder1\Forms\CatalogTab.cs">
       <Link>Forms\CatalogTab.cs</Link>
     </Compile>
+    <Compile Include="Forms\CategoryGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Helpers\UIHelper.cs" />
     <Compile Include="Models\PCComponent.cs" />
     <Compile Include="PCBuilder\Form1.cs">
@@ -106,6 +109,9 @@
     <Compile Include="PCBuilder\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DataManager.cs" />
+    <EmbeddedResource Include="PCBuilder\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -115,7 +121,30 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="data\components.json" />
+    <None Include="data\cases.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\coolers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\cpus.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\gpus.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\motherboards.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\psus.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\ram.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\ssd.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

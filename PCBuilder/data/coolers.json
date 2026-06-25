@@ -1,0 +1,69 @@
+{
+  "components": [
+    {
+      "id": "cool-001",
+      "name": "NZXT Kraken X73",
+      "category": "Охлаждение",
+      "price": 18000,
+      "description": "360мм, RGB, 3x вентилятора",
+      "inStock": true,
+      "specs": {
+        "Тип": "Жидкостное",
+        "Размер": "360мм",
+        "Вентиляторы": "3x 120мм"
+      }
+    },
+    {
+      "id": "cool-002",
+      "name": "Corsair iCUE H150i",
+      "category": "Охлаждение",
+      "price": 16000,
+      "description": "360мм, RGB, 3x вентилятора",
+      "inStock": true,
+      "specs": {
+        "Тип": "Жидкостное",
+        "Размер": "360мм",
+        "Вентиляторы": "3x 120мм"
+      }
+    },
+    {
+      "id": "cool-003",
+      "name": "Deepcool AK620",
+      "category": "Охлаждение",
+      "price": 7000,
+      "description": "Двухбашенный, 2x120мм",
+      "inStock": true,
+      "specs": {
+        "Тип": "Воздушное",
+        "Башни": "2",
+        "Вентиляторы": "2x 120мм"
+      }
+    },
+    {
+      "id": "cool-004",
+      "name": "Noctua NH-D15",
+      "category": "Охлаждение",
+      "price": 8000,
+      "description": "Двухбашенный, 2x140мм",
+      "inStock": true,
+      "specs": {
+        "Тип": "Воздушное",
+        "Башни": "2",
+        "Вентиляторы": "2x 140мм"
+      }
+    },
+    {
+      "id": "cool-005",
+      "name": "Cooler Master Hyper 212",
+      "category": "Охлаждение",
+      "price": 3500,
+      "description": "Однобашенный, 120мм",
+      "inStock": true,
+      "specs": {
+        "Тип": "Воздушное",
+        "Башни": "1",
+        "Вентиляторы": "1x 120мм"
+      }
+    }
+  ]
+}

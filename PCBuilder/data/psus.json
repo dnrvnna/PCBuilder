@@ -1,0 +1,74 @@
+{
+  "components": [
+    {
+      "id": "psu-001",
+      "name": "Блок питания 1200W",
+      "category": "Блок питания",
+      "price": 18000,
+      "description": "80+ Platinum, ATX 3.0",
+      "recommendedPSU": 1200,
+      "inStock": true,
+      "specs": {
+        "Мощность": "1200W",
+        "Эффективность": "80+ Platinum",
+        "Модульность": "Полная"
+      }
+    },
+    {
+      "id": "psu-002",
+      "name": "Блок питания 1000W",
+      "category": "Блок питания",
+      "price": 12000,
+      "description": "80+ Platinum, ATX 3.0",
+      "recommendedPSU": 1000,
+      "inStock": true,
+      "specs": {
+        "Мощность": "1000W",
+        "Эффективность": "80+ Platinum",
+        "Модульность": "Полная"
+      }
+    },
+    {
+      "id": "psu-003",
+      "name": "Блок питания 850W",
+      "category": "Блок питания",
+      "price": 9000,
+      "description": "80+ Gold, ATX 3.0",
+      "recommendedPSU": 850,
+      "inStock": true,
+      "specs": {
+        "Мощность": "850W",
+        "Эффективность": "80+ Gold",
+        "Модульность": "Полная"
+      }
+    },
+    {
+      "id": "psu-004",
+      "name": "Блок питания 750W",
+      "category": "Блок питания",
+      "price": 7000,
+      "description": "80+ Gold",
+      "recommendedPSU": 750,
+      "inStock": true,
+      "specs": {
+        "Мощность": "750W",
+        "Эффективность": "80+ Gold",
+        "Модульность": "Частичная"
+      }
+    },
+    {
+      "id": "psu-005",
+      "name": "Блок питания 650W",
+      "category": "Блок питания",
+      "price": 5500,
+      "description": "80+ Bronze",
+      "recommendedPSU": 650,
+      "inStock": true,
+      "specs": {
+        "Мощность": "650W",
+        "Эффективность": "80+ Bronze",
+        "Модульность": "Нет"
+      }
+    }
+  ]
+}

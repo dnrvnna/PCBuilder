@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "id": "mb-001",
+      "name": "ASUS ROG Maximus Z790 Hero",
+      "category": "Материнская плата",
+      "price": 45000,
+      "description": "LGA1700, DDR5, ATX",
+      "socket": "LGA1700",
+      "memoryType": "DDR5",
+      "inStock": true,
+      "specs": {
+        "Форм-фактор": "ATX",
+        "Слоты RAM": "4",
+        "Макс. RAM": "128GB"
+      }
+    },
+    {
+      "id": "mb-002",
+      "name": "MSI MPG Z790 Carbon WiFi",
+      "category": "Материнская плата",
+      "price": 32000,
+      "description": "LGA1700, DDR5, ATX",
+      "socket": "LGA1700",
+      "memoryType": "DDR5",
+      "inStock": true,
+      "specs": {
+        "Форм-фактор": "ATX",
+        "Слоты RAM": "4",
+        "Макс. RAM": "128GB"
+      }
+    },
+    {
+      "id": "mb-003",
+      "name": "ASUS TUF Gaming B760-Plus",
+      "category": "Материнская плата",
+      "price": 18000,
+      "description": "LGA1700, DDR5, ATX",
+      "socket": "LGA1700",
+      "memoryType": "DDR5",
+      "inStock": true,
+      "specs": {
+        "Форм-фактор": "ATX",
+        "Слоты RAM": "4",
+        "Макс. RAM": "128GB"
+      }
+    },
+    {
+      "id": "mb-004",
+      "name": "ASUS ROG Crosshair X670E Hero",
+      "category": "Материнская плата",
+      "price": 50000,
+      "description": "AM5, DDR5, ATX",
+      "socket": "AM5",
+      "memoryType": "DDR5",
+      "inStock": true,
+      "specs": {
+        "Форм-фактор": "ATX",
+        "Слоты RAM": "4",
+        "Макс. RAM": "128GB"
+      }
+    },
+    {
+      "id": "mb-005",
+      "name": "MSI MAG X670E Tomahawk",
+      "category": "Материнская плата",
+      "price": 28000,
+      "description": "AM5, DDR5, ATX",
+      "socket": "AM5",
+      "memoryType": "DDR5",
+      "inStock": true,
+      "specs": {
+        "Форм-фактор": "ATX",
+        "Слоты RAM": "4",
+        "Макс. RAM": "128GB"
+      }
+    },
+    {
+      "id": "mb-006",
+      "name": "ASUS TUF Gaming B650-Plus",
+      "category": "Материнская плата",
+      "price": 15000,
+      "description": "AM5, DDR5, ATX",
+      "socket": "AM5",
+      "memoryType": "DDR5",
+      "inStock": true,
+      "specs": {
+        "Форм-фактор": "ATX",
+        "Слоты RAM": "4",
+        "Макс. RAM": "128GB"
+      }
+    },
+    {
+      "id": "mb-007",
+      "name": "MSI B550 Tomahawk",
+      "category": "Материнская плата",
+      "price": 12000,
+      "description": "AM4, DDR4, ATX",
+      "socket": "AM4",
+      "memoryType": "DDR4",
+      "inStock": true,
+      "specs": {
+        "Форм-фактор": "ATX",
+        "Слоты RAM": "4",
+        "Макс. RAM": "128GB"
+      }
+    },
+    {
+      "id": "mb-008",
+      "name": "ASUS ROG Strix B550-F",
+      "category": "Материнская плата",
+      "price": 14000,
+      "description": "AM4, DDR4, ATX",
+      "socket": "AM4",
+      "memoryType": "DDR4",
+      "inStock": true,
+      "specs": {
+        "Форм-фактор": "ATX",
+        "Слоты RAM": "4",
+        "Макс. RAM": "128GB"
+      }
+    }
+  ]
+}

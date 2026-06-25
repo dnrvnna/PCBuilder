@@ -1,0 +1,88 @@
+{
+  "components": [
+    {
+      "id": "ram-001",
+      "name": "32GB DDR5 6000MHz",
+      "category": "Оперативная память",
+      "price": 15000,
+      "description": "2x16GB, CL30",
+      "memoryType": "DDR5",
+      "inStock": true,
+      "specs": {
+        "Ёмкость": "32GB",
+        "Частота": "6000MHz",
+        "Тайминги": "CL30"
+      }
+    },
+    {
+      "id": "ram-002",
+      "name": "32GB DDR5 5600MHz",
+      "category": "Оперативная память",
+      "price": 12000,
+      "description": "2x16GB, CL36",
+      "memoryType": "DDR5",
+      "inStock": true,
+      "specs": {
+        "Ёмкость": "32GB",
+        "Частота": "5600MHz",
+        "Тайминги": "CL36"
+      }
+    },
+    {
+      "id": "ram-003",
+      "name": "16GB DDR5 5600MHz",
+      "category": "Оперативная память",
+      "price": 8000,
+      "description": "2x8GB, CL36",
+      "memoryType": "DDR5",
+      "inStock": true,
+      "specs": {
+        "Ёмкость": "16GB",
+        "Частота": "5600MHz",
+        "Тайминги": "CL36"
+      }
+    },
+    {
+      "id": "ram-004",
+      "name": "32GB DDR4 3600MHz",
+      "category": "Оперативная память",
+      "price": 10000,
+      "description": "2x16GB, CL18",
+      "memoryType": "DDR4",
+      "inStock": true,
+      "specs": {
+        "Ёмкость": "32GB",
+        "Частота": "3600MHz",
+        "Тайминги": "CL18"
+      }
+    },
+    {
+      "id": "ram-005",
+      "name": "16GB DDR4 3600MHz",
+      "category": "Оперативная память",
+      "price": 6000,
+      "description": "2x8GB, CL18",
+      "memoryType": "DDR4",
+      "inStock": true,
+      "specs": {
+        "Ёмкость": "16GB",
+        "Частота": "3600MHz",
+        "Тайминги": "CL18"
+      }
+    },
+    {
+      "id": "ram-006",
+      "name": "64GB DDR5 6000MHz",
+      "category": "Оперативная память",
+      "price": 28000,
+      "description": "2x32GB, CL30",
+      "memoryType": "DDR5",
+      "inStock": true,
+      "specs": {
+        "Ёмкость": "64GB",
+        "Частота": "6000MHz",
+        "Тайминги": "CL30"
+      }
+    }
+  ]
+}

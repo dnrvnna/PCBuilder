@@ -1,0 +1,69 @@
+{
+  "components": [
+    {
+      "id": "case-001",
+      "name": "Corsair 5000D Airflow",
+      "category": "Корпус",
+      "price": 12000,
+      "description": "ATX, Стекло, 3x вентилятора",
+      "inStock": true,
+      "specs": {
+        "Тип": "ATX",
+        "Материал": "Сталь + Стекло",
+        "Вентиляторы": "3x 120мм"
+      }
+    },
+    {
+      "id": "case-002",
+      "name": "NZXT H7 Flow",
+      "category": "Корпус",
+      "price": 10000,
+      "description": "ATX, Стекло, 2x вентилятора",
+      "inStock": true,
+      "specs": {
+        "Тип": "ATX",
+        "Материал": "Сталь + Стекло",
+        "Вентиляторы": "2x 120мм"
+      }
+    },
+    {
+      "id": "case-003",
+      "name": "Lian Li O11 Dynamic",
+      "category": "Корпус",
+      "price": 14000,
+      "description": "ATX, Стекло, без вентиляторов",
+      "inStock": true,
+      "specs": {
+        "Тип": "ATX",
+        "Материал": "Алюминий + Стекло",
+        "Вентиляторы": "Нет"
+      }
+    },
+    {
+      "id": "case-004",
+      "name": "Fractal Design Meshify 2",
+      "category": "Корпус",
+      "price": 11000,
+      "description": "ATX, Стекло, 3x вентилятора",
+      "inStock": true,
+      "specs": {
+        "Тип": "ATX",
+        "Материал": "Сталь + Стекло",
+        "Вентиляторы": "3x 120мм"
+      }
+    },
+    {
+      "id": "case-005",
+      "name": "Deepcool CH560",
+      "category": "Корпус",
+      "price": 7000,
+      "description": "ATX, Стекло, 4x вентилятора",
+      "inStock": true,
+      "specs": {
+        "Тип": "ATX",
+        "Материал": "Сталь + Стекло",
+        "Вентиляторы": "4x 120мм"
+      }
+    }
+  ]
+}

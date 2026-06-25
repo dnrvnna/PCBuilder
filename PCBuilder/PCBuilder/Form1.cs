@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using PCBuilder.Forms;
 using PCBuilder.Services;
+using Guna.UI2.WinForms;
 
 namespace PCBuilder
 {
@@ -19,6 +20,13 @@ namespace PCBuilder
             this.MinimumSize = new Size(1024, 600);
 
             dataManager = new DataManager();
+            InitializeTabs();
+        }
+
+        public void RefreshAllTabs()
+        {
+            // Очищаем все контролы и пересоздаём вкладки
+            this.Controls.Clear();
             InitializeTabs();
         }
 
@@ -61,24 +69,59 @@ namespace PCBuilder
                 }
             };
 
-            // Создаём вкладки через отдельные классы
+            // === ВКЛАДКА 1: КАТАЛОГ ===
             TabPage catalogTab = new TabPage("📚 Каталог");
             catalogTab.BackColor = Color.FromArgb(30, 30, 35);
-            catalogTab.Controls.Add(new CatalogTab(dataManager).Create());
+            var catalog = new CatalogTab(dataManager);
+            catalogTab.Controls.Add(catalog.Create());
 
+            // === ВКЛАДКА 2: СБОРКА ===
             TabPage buildTab = new TabPage("🔧 Сборка");
             buildTab.BackColor = Color.FromArgb(30, 30, 35);
-            buildTab.Controls.Add(new BuildTab(dataManager).Create());
+            var build = new BuildTab(dataManager);
+            buildTab.Controls.Add(build.Create());
 
+            // === ВКЛАДКА 3: АНАЛИТИКА ===
             TabPage analyticsTab = new TabPage("📊 Аналитика");
             analyticsTab.BackColor = Color.FromArgb(30, 30, 35);
-            analyticsTab.Controls.Add(new AnalyticsTab(dataManager).Create());
+            var analytics = new AnalyticsTab(dataManager);
+            analyticsTab.Controls.Add(analytics.Create());
 
             tabControl.TabPages.Add(catalogTab);
             tabControl.TabPages.Add(buildTab);
             tabControl.TabPages.Add(analyticsTab);
 
+            // === КНОПКА ОБНОВЛЕНИЯ ===
+            Guna2Button btnRefresh = new Guna2Button
+            {
+                Text = "🔄 Обновить данные",
+                Size = new Size(140, 38),
+                Location = new Point(this.ClientSize.Width - 160, 10),
+                BorderRadius = 10,
+                FillColor = Color.FromArgb(0, 150, 255),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                ForeColor = Color.White,
+                Anchor = AnchorStyles.Top | AnchorStyles.Right
+            };
+            btnRefresh.HoverState.FillColor = Color.FromArgb(0, 170, 255);
+            btnRefresh.Click += (s, e) =>
+            {
+                dataManager.LoadAllData();
+                RefreshAllTabs();
+
+                // Показываем уведомление
+                Guna2MessageDialog dialog = new Guna2MessageDialog
+                {
+                    Text = $"✅ Данные обновлены!\nЗагружено: {dataManager.Components.Count} компонентов",
+                    Icon = Guna.UI2.WinForms.MessageDialogIcon.Information,
+                    Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK,
+                    Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
+                };
+                dialog.Show();
+            };
+
             this.Controls.Add(tabControl);
+            this.Controls.Add(btnRefresh);
         }
     }
 }

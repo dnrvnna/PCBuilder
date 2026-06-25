@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "id": "cpu-001",
+      "name": "Intel Core i9-13900K",
+      "category": "Процессор",
+      "price": 55000,
+      "description": "24 ядра, 5.8 ГГц, LGA1700",
+      "socket": "LGA1700",
+      "powerConsumption": 253,
+      "inStock": true,
+      "specs": {
+        "Ядра": "24",
+        "Потоки": "32",
+        "Макс. частота": "5.8 ГГц"
+      }
+    },
+    {
+      "id": "cpu-002",
+      "name": "Intel Core i7-13700K",
+      "category": "Процессор",
+      "price": 38000,
+      "description": "16 ядер, 5.4 ГГц, LGA1700",
+      "socket": "LGA1700",
+      "powerConsumption": 253,
+      "inStock": true,
+      "specs": {
+        "Ядра": "16",
+        "Потоки": "24",
+        "Макс. частота": "5.4 ГГц"
+      }
+    },
+    {
+      "id": "cpu-003",
+      "name": "Intel Core i5-13600K",
+      "category": "Процессор",
+      "price": 25000,
+      "description": "14 ядер, 5.1 ГГц, LGA1700",
+      "socket": "LGA1700",
+      "powerConsumption": 181,
+      "inStock": true,
+      "specs": {
+        "Ядра": "14",
+        "Потоки": "20",
+        "Макс. частота": "5.1 ГГц"
+      }
+    },
+    {
+      "id": "cpu-004",
+      "name": "Intel Core i9-14900K",
+      "category": "Процессор",
+      "price": 62000,
+      "description": "24 ядра, 6.0 ГГц, LGA1700",
+      "socket": "LGA1700",
+      "powerConsumption": 253,
+      "inStock": true,
+      "specs": {
+        "Ядра": "24",
+        "Потоки": "32",
+        "Макс. частота": "6.0 ГГц"
+      }
+    },
+    {
+      "id": "cpu-005",
+      "name": "AMD Ryzen 9 7950X",
+      "category": "Процессор",
+      "price": 52000,
+      "description": "16 ядер, 5.7 ГГц, AM5",
+      "socket": "AM5",
+      "powerConsumption": 170,
+      "inStock": true,
+      "specs": {
+        "Ядра": "16",
+        "Потоки": "32",
+        "Макс. частота": "5.7 ГГц"
+      }
+    },
+    {
+      "id": "cpu-006",
+      "name": "AMD Ryzen 7 7800X3D",
+      "category": "Процессор",
+      "price": 40000,
+      "description": "8 ядер, 5.0 ГГц, AM5",
+      "socket": "AM5",
+      "powerConsumption": 120,
+      "inStock": true,
+      "specs": {
+        "Ядра": "8",
+        "Потоки": "16",
+        "Макс. частота": "5.0 ГГц"
+      }
+    },
+    {
+      "id": "cpu-007",
+      "name": "AMD Ryzen 5 7600X",
+      "category": "Процессор",
+      "price": 22000,
+      "description": "6 ядер, 5.3 ГГц, AM5",
+      "socket": "AM5",
+      "powerConsumption": 105,
+      "inStock": true,
+      "specs": {
+        "Ядра": "6",
+        "Потоки": "12",
+        "Макс. частота": "5.3 ГГц"
+      }
+    },
+    {
+      "id": "cpu-008",
+      "name": "AMD Ryzen 7 5800X3D",
+      "category": "Процессор",
+      "price": 30000,
+      "description": "8 ядер, 4.5 ГГц, AM4",
+      "socket": "AM4",
+      "powerConsumption": 105,
+      "inStock": true,
+      "specs": {
+        "Ядра": "8",
+        "Потоки": "16",
+        "Макс. частота": "4.5 ГГц"
+      }
+    }
+  ]
+}

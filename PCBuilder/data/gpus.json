@@ -1,0 +1,102 @@
+{
+  "components": [
+    {
+      "id": "gpu-001",
+      "name": "NVIDIA RTX 4090",
+      "category": "Видеокарта",
+      "price": 160000,
+      "description": "24GB GDDR6X, 450W",
+      "powerConsumption": 450,
+      "inStock": true,
+      "specs": {
+        "VRAM": "24GB GDDR6X",
+        "CUDA ядра": "16384",
+        "Интерфейс": "PCIe 4.0"
+      }
+    },
+    {
+      "id": "gpu-002",
+      "name": "NVIDIA RTX 4080 Super",
+      "category": "Видеокарта",
+      "price": 100000,
+      "description": "16GB GDDR6X, 320W",
+      "powerConsumption": 320,
+      "inStock": true,
+      "specs": {
+        "VRAM": "16GB GDDR6X",
+        "CUDA ядра": "10240",
+        "Интерфейс": "PCIe 4.0"
+      }
+    },
+    {
+      "id": "gpu-003",
+      "name": "NVIDIA RTX 4070 Ti Super",
+      "category": "Видеокарта",
+      "price": 72000,
+      "description": "16GB GDDR6X, 285W",
+      "powerConsumption": 285,
+      "inStock": true,
+      "specs": {
+        "VRAM": "16GB GDDR6X",
+        "CUDA ядра": "8448",
+        "Интерфейс": "PCIe 4.0"
+      }
+    },
+    {
+      "id": "gpu-004",
+      "name": "NVIDIA RTX 4070",
+      "category": "Видеокарта",
+      "price": 50000,
+      "description": "12GB GDDR6X, 200W",
+      "powerConsumption": 200,
+      "inStock": true,
+      "specs": {
+        "VRAM": "12GB GDDR6X",
+        "CUDA ядра": "5888",
+        "Интерфейс": "PCIe 4.0"
+      }
+    },
+    {
+      "id": "gpu-005",
+      "name": "AMD RX 7900 XTX",
+      "category": "Видеокарта",
+      "price": 85000,
+      "description": "24GB GDDR6, 355W",
+      "powerConsumption": 355,
+      "inStock": true,
+      "specs": {
+        "VRAM": "24GB GDDR6",
+        "CUDA ядра": "6144",
+        "Интерфейс": "PCIe 4.0"
+      }
+    },
+    {
+      "id": "gpu-006",
+      "name": "AMD RX 7900 XT",
+      "category": "Видеокарта",
+      "price": 65000,
+      "description": "20GB GDDR6, 315W",
+      "powerConsumption": 315,
+      "inStock": true,
+      "specs": {
+        "VRAM": "20GB GDDR6",
+        "CUDA ядра": "5376",
+        "Интерфейс": "PCIe 4.0"
+      }
+    },
+    {
+      "id": "gpu-007",
+      "name": "AMD RX 7800 XT",
+      "category": "Видеокарта",
+      "price": 45000,
+      "description": "16GB GDDR6, 263W",
+      "powerConsumption": 263,
+      "inStock": true,
+      "specs": {
+        "VRAM": "16GB GDDR6",
+        "CUDA ядра": "3840",
+        "Интерфейс": "PCIe 4.0"
+      }
+    }
+  ]
+}
