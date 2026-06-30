@@ -5,27 +5,27 @@ using System.Linq;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using PCBuilder.Models;
+using PCBuilder.Helpers;
 
-namespace PCBuilder.Forms
+namespace PCBuilder.Forms.Controls
 {
     public class CategoryGroup : Panel
     {
         private readonly string categoryName;
-        private readonly List<PCComponent> components;
-        private readonly Action<PCComponent> onAddClick;
+        private readonly List<ComponentBase> components;  // ← ComponentBase
+        private readonly Action<ComponentBase> onAddClick;  // ← ComponentBase
         private bool isExpanded = true;
         private Panel headerPanel;
         private FlowLayoutPanel contentPanel;
         private Guna2Button btnToggle;
         private Label lblTitle;
 
-        public CategoryGroup(string categoryName, List<PCComponent> components, Action<PCComponent> onAddClick)
+        public CategoryGroup(string categoryName, List<ComponentBase> components, Action<ComponentBase> onAddClick)
         {
             this.categoryName = categoryName;
             this.components = components;
             this.onAddClick = onAddClick;
 
-            // Настройка самой группы
             this.Width = 100;
             this.Height = 45;
             this.BackColor = Color.Transparent;
@@ -48,11 +48,11 @@ namespace PCBuilder.Forms
                 Cursor = Cursors.Hand,
                 Margin = new Padding(0),
                 Padding = new Padding(0),
-                Dock = DockStyle.Top  // ← ВАЖНО: прикрепляем к верху
+                Dock = DockStyle.Top
             };
             headerPanel.Click += (s, e) => ToggleExpand();
 
-            // Кнопка сворачивания
+            // Кнопка сворачивания/разворачивания
             btnToggle = new Guna2Button
             {
                 Text = "▼",
@@ -102,7 +102,7 @@ namespace PCBuilder.Forms
                 Padding = new Padding(5, 5, 5, 5),
                 Margin = new Padding(0),
                 AutoSize = false,
-                Dock = DockStyle.Top  // ← ВАЖНО: прикрепляем к верху
+                Dock = DockStyle.Top
             };
 
             foreach (var component in components)
@@ -114,7 +114,7 @@ namespace PCBuilder.Forms
             this.Controls.Add(contentPanel);
         }
 
-        private Panel CreateCard(PCComponent component)
+        private Panel CreateCard(ComponentBase component)
         {
             Panel card = new Panel
             {
@@ -155,7 +155,7 @@ namespace PCBuilder.Forms
                 Height = 18
             };
 
-            // Характеристики
+            // Характеристики (из Specs)
             string specsText = GetSpecsText(component);
             Label lblSpecs = new Label
             {
@@ -199,7 +199,7 @@ namespace PCBuilder.Forms
             return card;
         }
 
-        private string GetSpecsText(PCComponent component)
+        private string GetSpecsText(ComponentBase component)
         {
             if (component.Specs == null || component.Specs.Count == 0)
                 return "";
@@ -207,6 +207,7 @@ namespace PCBuilder.Forms
             var specs = component.Specs;
             List<string> parts = new List<string>();
 
+            // Приоритетные характеристики
             if (specs.ContainsKey("Ядра")) parts.Add($"Ядер: {specs["Ядра"]}");
             if (specs.ContainsKey("Потоки")) parts.Add($"Потоков: {specs["Потоки"]}");
             if (specs.ContainsKey("VRAM")) parts.Add($"VRAM: {specs["VRAM"]}");
@@ -222,6 +223,7 @@ namespace PCBuilder.Forms
             if (specs.ContainsKey("Эффективность")) parts.Add($"Эффективность: {specs["Эффективность"]}");
             if (specs.ContainsKey("Модульность")) parts.Add($"Модульность: {specs["Модульность"]}");
 
+            // Если ничего не нашли — берём первые 2 любые характеристики
             if (parts.Count == 0)
             {
                 foreach (var kvp in specs.Take(2))

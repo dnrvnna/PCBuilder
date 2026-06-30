@@ -1,8 +1,8 @@
 ﻿using System.Windows.Forms;
 
-namespace PCBuilder
+namespace PCBuilder.Forms
 {
-    partial class Form1
+    partial class MainForm  // ← ДОБАВИТЬ partial
     {
         private System.ComponentModel.IContainer components = null;
 

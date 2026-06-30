@@ -87,31 +87,52 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\..\..\..\source\repos\PCbuilder1\PCbuilder1\Forms\AnalysticsTab.cs">
-      <Link>Forms\AnalysticsTab.cs</Link>
+      <Link>Forms\Tabs\AnalysticsTab.cs</Link>
     </Compile>
     <Compile Include="..\..\..\..\..\source\repos\PCbuilder1\PCbuilder1\Forms\BuildTab.cs">
-      <Link>Forms\BuildTab.cs</Link>
+      <Link>Forms\Tabs\BuildTab.cs</Link>
     </Compile>
     <Compile Include="..\..\..\..\..\source\repos\PCbuilder1\PCbuilder1\Forms\CatalogTab.cs">
-      <Link>Forms\CatalogTab.cs</Link>
+      <Link>Forms\Tabs\CatalogTab.cs</Link>
     </Compile>
-    <Compile Include="Forms\CategoryGroup.cs">
+    <Compile Include="Factories\ComponentFactory.cs" />
+    <Compile Include="Forms\Controls\BuildCard.cs" />
+    <Compile Include="Forms\Controls\BuildItem.cs" />
+    <Compile Include="Forms\Controls\CategoryGroup.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Helpers\UIHelper.cs" />
-    <Compile Include="Models\PCComponent.cs" />
-    <Compile Include="PCBuilder\Form1.cs">
+    <Compile Include="Forms\Controls\ComponentCard.cs" />
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PCBuilder\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PCBuilder\Program.cs" />
+    <Compile Include="Forms\Tabs\BaseTab.cs" />
+    <Compile Include="Forms\Tabs\SavedBuildsTab.cs" />
+    <Compile Include="Helpers\UIHelper.cs" />
+    <Compile Include="Models\Build.cs" />
+    <Compile Include="Models\BuildAnalytics.cs" />
+    <Compile Include="Models\ComponentBase.cs" />
+    <Compile Include="Models\Cooling.cs" />
+    <Compile Include="Models\GraphicsCard.cs" />
+    <Compile Include="Models\MemoryModule.cs" />
+    <Compile Include="Models\Motherboard.cs" />
+    <Compile Include="Models\PowerSupply.cs" />
+    <Compile Include="Models\Processor.cs" />
+    <Compile Include="Models\Storage.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rules\ICompatibilityRule.cs" />
+    <Compile Include="Rules\MemoryTypeRule.cs" />
+    <Compile Include="Rules\PowerSupplyRule.cs" />
+    <Compile Include="Rules\SocketRule.cs" />
+    <Compile Include="Services\BuildManager.cs" />
+    <Compile Include="Services\BuildStorage.cs" />
     <Compile Include="Services\DataManager.cs" />
-    <EmbeddedResource Include="PCBuilder\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Services\IBuildManager.cs" />
+    <Compile Include="Services\IBuildStorage.cs" />
+    <Compile Include="Services\IDataManager.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -121,9 +142,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="data\builds.json" />
     <None Include="data\cases.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="data\components.json" />
     <None Include="data\coolers.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
